@@ -44,6 +44,15 @@ const processFolder = (folderPath, translations) => {
 const main = () => {
     const translations = {};
 
+    // Check the target folder
+    if (!fs.existsSync(targetFolderPath)) {
+        console.error(
+            'The target folder does not exist. Please specify the correct path in the "config.js" file.'
+        );
+        return;
+    }
+
+    // Recursively process files in the target folder.
     processFolder(targetFolderPath, translations);
 
     const outputFilePath = path.join(
