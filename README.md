@@ -1,0 +1,1 @@
+# logseq-l10n-create-json
