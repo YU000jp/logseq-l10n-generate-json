@@ -1,10 +1,15 @@
-
-
 // Specify the path of the folder where the translation files will be output. Example: "C:\\logseq-plugin\\src"
-export const targetFolderPath = "";
 
+const targetFolderPath = "C:\\logseq-plugin\\src";
 // Specify the name of the output file.
-export const outputFileName = "ja.json";
 
+const outputFileName = "ja.json";
 // Specify the name of the folder where the translation files are saved.
-export const translationsFolderName = "translations";
+
+const translationsFolderName = "translations";
+
+module.exports = {
+    targetFolderPath,
+    outputFileName,
+    translationsFolderName
+};
