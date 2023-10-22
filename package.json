@@ -1,0 +1,12 @@
+{
+  "name": "logseq-l10n-create-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "YU000jp",
+  "license": "MIT"
+}
