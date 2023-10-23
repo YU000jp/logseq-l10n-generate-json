@@ -8,7 +8,7 @@ Extract '`t("string")`' from the scripts in the folder and create one JSON file.
 
 ## Install
 
-1. Clone this repo. Run command '`pnpm install`' for dependencies.
+1. Clone this repo. Run command '`pnpm install`'.
 1. Edit config.js.
 
 ## Usage
