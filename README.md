@@ -36,3 +36,7 @@ const main = async () => {
 
 }
 ```
+
+## Recommend
+
+1. Translation > [logseq-l10n-clone-json](https://github.com/YU000jp/logseq-l10n-clone-json): Clone JSON files for Logseq full languages based on one translation file
