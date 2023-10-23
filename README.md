@@ -1,6 +1,6 @@
-# logseq-l10n-create-json
+# logseq-l10n-generate-json
 
-Extract ' `t("string")` ' from the scripts in the folder and create one JSON file.
+Extract ' `t("string")` ' from the scripts in the folder and generate one JSON file.
 
 ## Dependencies
 

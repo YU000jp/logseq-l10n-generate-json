@@ -1,5 +1,5 @@
 {
-  "name": "logseq-l10n-create-json",
+  "name": "logseq-l10n-generate-json",
   "version": "1.0.0",
   "description": "",
   "main": "index.cjs",
