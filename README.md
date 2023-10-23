@@ -9,12 +9,12 @@ Extract '`t("string")`' from the scripts in the folder and create one JSON file.
 ## Install
 
 1. Clone this repo. Run command '`pnpm install`'.
-1. Edit config.js.
+1. Edit "config.js".
 
 ## Usage
 
 1. **Enclose all strings to be translated in the scripts with "t("string")".**.
-1. Enter "targetFolderPath" in config.js.
+1. Enter "targetFolderPath" in "config.js".
 1. Run “`node index.cjs`” command in terminal.
 1. One File will be created in the target folder.
    > If a file with the same name exists, it will not be updated.
