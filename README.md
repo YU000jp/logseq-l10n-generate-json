@@ -15,6 +15,7 @@ Extract ' `t("string")` ' from the scripts in the folder and generate one JSON f
 ## Usage
 
 1. **Enclose all strings to be translated in the scripts with ' `t("string")` '.**.
+1. Create a "`translations`" folder.
 1. Enter "targetFolderPath" in "config.js".
 1. Run ' `node index.cjs` ' command in terminal.
 1. One File will be created in the target folder.
