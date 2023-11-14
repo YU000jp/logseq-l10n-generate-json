@@ -19,7 +19,7 @@ Extract ' `t("string")` ' from the scripts in the folder and generate one JSON f
 1. Enter "targetFolderPath" in "config.js".
 1. Run ' `node index.cjs` ' command in terminal.
 1. One File will be created in the target folder.
-   > If a file with the same name exists, it will not be updated.
+   > If a file with the same name exists, it will be updated.
 
 ```TypeScript
 import { setup as l10nSetup , t } from "logseq-l10n"

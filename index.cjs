@@ -14,7 +14,7 @@ function extractTranslationsFromFile(filePath, translations) {
 
     while ((match = regex.exec(fileContents)) !== null) {
         const translationKey = match[1];
-        translations[translationKey] = "";
+        if (!translations[translationKey]) translations[translationKey] = "";
     }
 }
 
@@ -68,10 +68,18 @@ const main = () => {
 
     // Check output file path
     if (fs.existsSync(outputFilePath)) {
-        console.error(
-            `The output file already exists. Please delete it before running the script again: ${outputFilePath}`
-        );
-        return;
+        // console.error(
+        //     `The output file already exists. Please delete it before running the script again: ${outputFilePath}`
+        // );
+        // return;
+
+        // already exists, read JSON and add to translations
+        const json = fs.readFileSync(outputFilePath, "utf8");
+        const obj = JSON.parse(json);
+        for (const key in obj) {
+            translations[key] = obj[key];
+        }
+        console.log(`Translation keys have been read from ${outputFilePath}.`);
     }
 
     // Recursively process files in the target folder.
