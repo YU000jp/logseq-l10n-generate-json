@@ -30,10 +30,10 @@ const processFolder = (folderPath, translations) => {
     for (const file of files) {
         const filePath = path.join(folderPath, file);
         const isDirectory = fs.statSync(filePath).isDirectory();
-
+        const type = path.extname(file);
         if (isDirectory && file !== translationsFolderName) {
             processFolder(filePath, translations);
-        } else if (!isDirectory && path.extname(file) === ".ts") {
+        } else if (!isDirectory && (type === ".ts" || type === ".tsx" || type === ".js") || type === ".jsx") {
             extractTranslationsFromFile(filePath, translations);
         }
     }
