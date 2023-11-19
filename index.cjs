@@ -9,11 +9,10 @@ const { translationsFolderName, targetFolderPath, outputFileName } = require('./
  */
 function extractTranslationsFromFile(filePath, translations) {
     const fileContents = fs.readFileSync(filePath, "utf8");
-    const regex = /(?<![a-zA-Z])t\(["'](.*?)["']\)/g;
+    const regex = /(?<![a-zA-Z])t\([\s\n]*["'](.*?)["'][\s\n]*\)/g;
     let match;
-
     while ((match = regex.exec(fileContents)) !== null) {
-        const translationKey = match[1];
+        const translationKey = match[1].replaceAll("\\", "");
         if (!translations[translationKey]) translations[translationKey] = "";
     }
 }
